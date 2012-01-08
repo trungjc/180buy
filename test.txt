@@ -1,1 +1,28 @@
-day la comnmit cua trungjc
+lam viec voi git :
+
+truocv khi lam hay nho lay ban moi nhat ve d
+
+ - git fetch origin
+ - git rebase orign
+
+sau day sua cac file
+
+minh kiem tra bang
+ -git status
+
+se thay cac file mau do.
+ gio phai dung lenh
+
+- git add -"tenfile" hoac git add -A
+
+roi lai 
+ -git status
+   se thay cac file co mau xanh
+tiep theo
+- git commit -m "mieu ta thay doi gi"
+
+
+tiep theo
+
+- git fetch origin 
+- git push origin master 
