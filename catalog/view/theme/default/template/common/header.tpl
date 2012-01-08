@@ -31,6 +31,10 @@
 <![endif]--> 
 <script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+
+<script type="text/javascript" src="catalog/view/javascript/cloud-zoom.1.0.2.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/cloud-zoom.css" />
+
 <?php foreach ($scripts as $script) { ?>
 <script type="text/javascript" src="<?php echo $script; ?>"></script>
 <?php } ?>
@@ -47,13 +51,45 @@ DD_belatedPNG.fix('#logo img');
 <?php echo $google_analytics; ?>
 </head>
 <body>
-<div id="container">
+<div class="topbox">
+	<div class="container">
+    <div class="menutop">
+        <ul>
+          <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a>/</li>
+          <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a>/</li>
+          <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+        </ul>
+    </div>
+    <div id="welcome">
+        <?php if (!$logged) { ?>
+        <?php echo $text_welcome; ?>
+        <?php } else { ?>
+        <?php echo $text_logged; ?>
+        <?php } ?>
+      </div>
+    </div>
+  </div>
+  <!--$url=$_SERVER['HTTP_REFERER'];
+$host=$_SERVER['HTTP_HOST'];-->
+<?php
+global $_SERVER;
+$path=$_SERVER['REQUEST_URI'];
+$bka=$path;
+$pos = strpos($bka, 'home')
+?>
+
+<div id="container" class="<?php if ($pos == true) {
+    echo 'homepage';
+} ?>" >
+
 <div id="header">
+
   <?php if ($logo) { ?>
+  
   <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
   <?php } ?>
   <?php if (count($languages) > 1) { ?>
-  <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+  <form  action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <div id="language"><?php echo $text_language; ?><br />
       <?php foreach ($languages as $language) { ?>
       &nbsp;<img src="image/flags/<?php echo $language['image']; ?>" alt="<?php echo $language['name']; ?>" title="<?php echo $language['name']; ?>" onclick="$('input[name=\'language_code\']').attr('value', '<?php echo $language['code']; ?>').submit(); $(this).parent().parent().submit();" />
@@ -65,7 +101,7 @@ DD_belatedPNG.fix('#logo img');
   <?php } ?>
   <?php if (count($currencies) > 1) { ?>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-    <div id="currency"><?php echo $text_currency; ?><br />
+    <div id="currency" style="display:none"><?php echo $text_currency; ?><br />
       <?php foreach ($currencies as $currency) { ?>
       <?php if ($currency['code'] == $currency_code) { ?>
       <?php if ($currency['symbol_left']) { ?>
@@ -100,37 +136,15 @@ DD_belatedPNG.fix('#logo img');
     <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
     <?php } ?>
   </div>
-  <div id="welcome">
-    <?php if (!$logged) { ?>
-    <?php echo $text_welcome; ?>
-    <?php } else { ?>
-    <?php echo $text_logged; ?>
-    <?php } ?>
-  </div>
-  <div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist_total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $cart; ?>"><?php echo $text_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
+ 
+  <div class="links"><a href="<?php echo $wishlist; ?>" id="wishlist_total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $cart; ?>"><?php echo $text_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
 </div>
-<?php if ($categories) { ?>
 <div id="menu">
-  <ul>
-    <?php foreach ($categories as $category) { ?>
-    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-      <?php if ($category['children']) { ?>
-      <div>
-        <?php for ($i = 0; $i < count($category['children']);) { ?>
-        <ul>
-          <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-          <?php for (; $i < $j; $i++) { ?>
-          <?php if (isset($category['children'][$i])) { ?>
-          <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
+    <ul>
+            <li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>
+          <?php foreach ($informations as $information) { ?>
+          <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
           <?php } ?>
-          <?php } ?>
-        </ul>
-        <?php } ?>
-      </div>
-      <?php } ?>
-    </li>
-    <?php } ?>
-  </ul>
+    </ul>
 </div>
-<?php } ?>
 <div id="notification"></div>

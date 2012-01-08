@@ -1,5 +1,11 @@
 $(document).ready(function() {
-	/* Search */
+	/* Search 
+	
+$('.parner .box-content').jcarousel({    
+    vertical: false, visible:4, scroll: 3,auto:100
+});*/$('#content .special:nth-child(1)').addClass('tababc')
+
+	
 	$('.button-search').bind('click', function() {
 		url = $('base').attr('href') + 'index.php?route=product/search';
 				 

@@ -1,0 +1,14 @@
+2012-01-08 17:26:38 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\180buy\system\library\mail.php on line 157
+2012-01-08 17:26:48 - PHP Notice:  Undefined index: shipping_address_id in D:\xampp\htdocs\180buy\catalog\controller\checkout\shipping.php on line 11
+2012-01-08 17:27:06 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\180buy\system\library\mail.php on line 157
+2012-01-08 17:28:21 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\xampp\htdocs\180buy\system\library\mail.php on line 157
+2012-01-08 20:18:35 - PHP Notice:  Undefined variable: informations in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\header.tpl on line 113
+2012-01-08 20:18:35 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\header.tpl on line 113
+2012-01-08 20:25:50 - PHP Notice:  Undefined variable: informations in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\header.tpl on line 113
+2012-01-08 20:25:50 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\header.tpl on line 113
+2012-01-08 20:38:57 - PHP Notice:  Undefined variable: informations in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\header.tpl on line 113
+2012-01-08 20:38:57 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\header.tpl on line 113
+2012-01-08 20:38:57 - PHP Notice:  Undefined variable: informations in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\header.tpl on line 113
+2012-01-08 20:38:57 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\header.tpl on line 113
+2012-01-08 23:05:06 - PHP Notice:  Error: Could not load template D:\xampp\htdocs\180buy/admin/view/template/module/cr2htmlmodule.tpl! in D:\xampp\htdocs\180buy\system\engine\controller.php on line 71
+2012-01-09 1:07:39 - PHP Notice:  Undefined variable: pos in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\home.tpl on line 2

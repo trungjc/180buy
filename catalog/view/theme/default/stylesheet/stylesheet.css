@@ -64,15 +64,15 @@ label {
 	cursor: pointer;
 }
 /* layout */
-#container {
-	width: 980px;
+#container ,.container{
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 }
 #column-left {
 	float: left;
-	width: 180px;
+	width: 200px;
 }
 #column-right {
 	float: right;
@@ -83,10 +83,11 @@ label {
 	margin-bottom: 25px;
 }
 #column-left + #column-right + #content, #column-left + #content {
-	margin-left: 195px;
+	margin-left: 210px;
 }
 #column-right + #content {
 	margin-right: 195px;
+	margin-right:0;
 }
 /* header */
 #header {
@@ -136,13 +137,12 @@ label {
 #header #cart {
 	position: absolute;
 	top: 0px;
-	right: 145px;
+	right: 0;;
 	z-index: 9;
 	min-width: 300px;
 }
 #header #cart .heading {
 	float: right;
-	margin-right: 172px;
 	margin-top: 15px;
 	padding-left: 14px;
 	padding-right: 14px;
@@ -257,7 +257,7 @@ label {
 }
 #header #search {
 	position: absolute;
-	top: 15px;
+	top: 108px;
 	right: 0px;
 	width: 298px;
 	z-index: 15;
@@ -274,25 +274,16 @@ label {
 #header #search input {
 	background: #FFF;
 	padding: 1px 1px 1px 33px;
-	width: 262px;
+	width: 252px;
 	height: 21px;
 	border: 1px solid #CCCCCC;
-	-webkit-border-radius: 3px 3px 3px 3px;
-	-moz-border-radius: 3px 3px 3px 3px;
-	-khtml-border-radius: 3px 3px 3px 3px;
-	border-radius: 3px 3px 3px 3px;
-	-webkit-box-shadow: 0px 2px 0px #F0F0F0;
-	-moz-box-shadow: 0px 2px 0px #F0F0F0;
-	box-shadow: 0px 2px 0px #F0F0F0;	
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius:10px;
+	border-radius:20px;
 }
-#header #welcome {
-	position: absolute;
-	top: 47px;
-	right: 0px;
-	z-index: 5;
-	width: 298px;
-	text-align: right;
-	color: #999999;
+#welcome {
+	float: right;
 }
 #header .links {
 	position: absolute;
@@ -315,17 +306,10 @@ label {
 }
 /* menu */
 #menu {
-	background: #585858;
-	border-bottom: 1px solid #000000;
+	background: #b90917;
+	border-bottom: 1px solid #da1b2f;
 	height: 37px;
 	margin-bottom: 15px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-khtml-border-radius: 5px 5px 5px 5px;
-	border-radius: 5px 5px 5px 5px;
-	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
-	-moz-box-shadow: 0px 2px 2px #DDDDDD;
-	box-shadow: 0px 2px 2px #DDDDDD;
 	padding: 0px 5px;
 }
 #menu ul {
@@ -598,28 +582,22 @@ a.button:hover span {
 	margin-bottom: 20px;
 }
 .box .box-heading {
-	-webkit-border-radius: 7px 7px 0px 0px;
-	-moz-border-radius: 7px 7px 0px 0px;
-	-khtml-border-radius: 7px 7px 0px 0px;
-	border-radius: 7px 7px 0px 0px;
-	border: 1px solid #DBDEE1;
-	background: url('../image/background.png') repeat-x;
+	border: 1px solid #a19e9e;
+	background: #ff951f url('../image/background.png') repeat-x;
+	background: #ff951f;
 	padding: 8px 10px 7px 10px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 14px;
-	color: #333;
+	color: #fff;
+	text-transform:uppercase;
 }
 .box .box-content {
 	background: #FFFFFF;
-	-webkit-border-radius: 0px 0px 7px 7px;
-	-moz-border-radius: 0px 0px 7px 7px;
-	-khtml-border-radius: 0px 0px 7px 7px;
-	border-radius: 0px 0px 7px 7px;
-	border-left: 1px solid #DBDEE1;
-	border-right: 1px solid #DBDEE1;
-	border-bottom: 1px solid #DBDEE1;
+	border-left: 1px solid #a19e9e;
+	border-right: 1px solid #a19e9e;
+	border-bottom: 1px solid #a19e9e;
 	padding: 10px;
 }
 /* box products */
@@ -643,7 +621,7 @@ a.button:hover span {
 }
 .box-product .image img {
 	padding: 3px;
-	border: 1px solid #E7E7E7;
+	border: 1px solid #bababa;
 }
 .box-product .name a {
 	color: #38B0E3;
@@ -1584,5 +1562,58 @@ a.button:hover span {
 	width: 100%;
 }
 .banner div img {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
+/*trungjc*/
+#column-left #banner0 img,#column-right #banner2 img ,#column-right #banner1 img,#column-right #banner0 img {
+	position: fixed;
+	top:50px;
+	
+}body #fancybox-wrap ,body #fancybox-overlay{
+    z-index: 9991101;}
+#column-left #banner0 img {
+	left: 5%;
+}
+.image-additional img {width:74;height:74px;}
+#column-right #banner2 img,#column-right #banner1 img,#column-right #banner0 img {
+	right: 5%;
+}
+#content {position: relative;}
+#content #banner3,#content #banner2,#content #banner1 {
+	position: absolute;	
+	top: -140px;
+	left: 8%;
+}
+
+.topbox {height: 30px;background:#a60f1b;line-height:30px;}
+.topbox ul {list-style:none;margin:0;padding:0; float: left;width:50%;}
+.topbox ul li {display: inline;color:#fff;}
+.topbox li a {color:#fff;text-decoration:none;margin-right:5px;}
+#column-left .lastest .name,#column-left .lastest .price ,#column-left .lastest .cart,
+#column-left .bestseller .price ,#column-left .bestseller .cart{display:none;}
+#column-left .lastest .box-content {padding: 5px 4px;}
+#column-left .lastest .box-product > div {margin:0;width:92px}
+#column-left .lastest .box-product .image img {
+    border: 1px solid #A19E9E;
+    padding: 3px;
+}
+#column-left .bestseller .box-content {padding: 5px 4px;}
+#column-left .bestseller  img {border: 1px solid #ff000c;padding: 3px 0;}
+#container #content .feature .box-product > div ,#container #content .special .box-product > div{width:157px!important;margin-right:  14px;margin-left:14px;}
+#container #content .feature .box-product > div{width:157px!important;margin-right:  13px;margin-left:16px;}
+#container .banner div {text-align:left;}
+.feature {margin:0 0 10px 0;}
+.parner {width:200px;position:absolute;right:0; top: 57.2%;}
+.parner .box-content {overflow:hidden;padding: 8px;}
+.parner ul{list-style: none;float:left;margin:0;padding:0;}
+.parner li{float: left;width:50%;}
+#container .special ,#container #carousel0{width:584px;}#container #carousel1{width:184px;}
+
+.homepage #column-left {margin-top:185px;}
+.homepage .slideshow {position:absolute;left:-210px;top:0;}
+#container #content .tababc .box-product > div {width:80px!important;margin:0 8px;}
+#container #content .tababc {width:310px;height:174px;float:right;}
+.homepage #content .feature{padding-top:185px;}
+.homepage #content .tababc .cart,.homepage #content .tababc .name{display:none;}
+.homepage #content .tababc .box-content {padding: 4px;}
+.homepage #content .tababc .box-heading {background:none;height}
