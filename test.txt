@@ -25,4 +25,6 @@ tiep theo
 tiep theo
 
 - git fetch origin 
-- git push origin master 
+- git push origin master
+
+giang sua
