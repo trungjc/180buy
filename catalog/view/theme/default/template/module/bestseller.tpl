@@ -1,5 +1,5 @@
 <div class="box bestseller">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
+  <div class="box-heading"><div class="middle"><?php echo $heading_title; ?></div></div>
   <div class="box-content">
     <div class="box-product">
       <?php foreach ($products as $product) { ?>

@@ -1,11 +1,19 @@
 $(document).ready(function() {
-	/* Search 
-	
+	ShowAdDiv();/* Search 
+	ShowAdDiv();
 $('.parner .box-content').jcarousel({    
     vertical: false, visible:4, scroll: 3,auto:100
 });*/$('#content .special:nth-child(1)').addClass('tababc')
 
+	//x=$('.homepage #column-left .banner:nth-child(1)').html();
+	//y=$('.homepage #column-right .banner:nth-child(1)').html();
+	//$('.homepage #column-left .banner:nth-child(1),.homepage #column-right .banner:nth-child(1)').hide()
+//./	$('body').append('<div id="bannerchay"></div>');	
+//	$('#bannerchay').append(x).append(y);
 	
+//	$('#bannerchay div:nth-child(1)').attr('id','divAdLeft');
+//	$('#bannerchay div:nth-child(2)').attr('id','divAdRight');
+	$('#column-left .banner:nth-child(1) ,#column-right .banner:nth-child(1)').css('position','absolute')
 	$('.button-search').bind('click', function() {
 		url = $('base').attr('href') + 'index.php?route=product/search';
 				 
@@ -215,3 +223,4 @@ function addToCompare(product_id) {
 		}
 	});
 }
+

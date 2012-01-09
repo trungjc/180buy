@@ -136,22 +136,21 @@ label {
 }
 #header #cart {
 	position: absolute;
-	top: 0px;
+	top: 10px;
 	right: 0;;
-	z-index: 9;
+	z-index: 16;
 	min-width: 300px;
+	background: url(../image/bg_gio_hang.png) no-repeat top right;
 }
 #header #cart .heading {
-	float: right;
-	margin-top: 15px;
+	float: left;
+	margin: 9px 0 10px 65px;
 	padding-left: 14px;
 	padding-right: 14px;
-	border-top: 1px solid #FFFFFF;
-	border-left: 1px solid #FFFFFF;
-	border-right: 1px solid #EEEEEE;
-	background: #FFF;
 	position: relative;
 	z-index: 1;
+	height: 37px;
+	line-height: 37px;
 }
 #header #cart .heading h4 {
 	color: #333333;
@@ -159,13 +158,14 @@ label {
 	font-weight: bold;
 	margin-top: 0px;
 	margin-bottom: 3px;
+	display: none;
 }
 #header #cart .heading a {
-	color: #38B0E3;
+	color: #ffffff;;
 	text-decoration: none;
 }
 #header #cart .heading a span {
-	background: #FFFFFF url('../image/arrow-down.png') 100% 50% no-repeat;
+	background: url('../image/arrow-down.png') 100% 50% no-repeat;
 	padding-right: 15px;
 }
 #header #cart .content {
@@ -175,31 +175,19 @@ label {
 	top: -1px;
 	padding: 8px;
 	min-height: 150px;
-	border-top: 1px solid #EEEEEE;
-	border-left: 1px solid #EEEEEE;
-	border-right: 1px solid #EEEEEE;
-	border-bottom: 1px solid #EEEEEE;
-	-webkit-border-radius: 0px 7px 7px 7px;
-	-moz-border-radius: 0px 7px 7px 7px;
-	-khtml-border-radius: 0px 7px 7px 7px;
-	border-radius: 0px 7px 7px 7px;
-	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
-	-moz-box-shadow: 0px 2px 2px #DDDDDD;
+	border: 1px solid #900;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px;
+	-moz-box-shadow: 5px;
 	box-shadow: 0px 2px 2px #DDDDDD;
-	background: #FFF;
+	background-color: #FFCF1D;
 }
 
 #header #cart.active .heading {
-	margin-top: 5px;
-	padding-top: 10px;
-	padding-bottom: 6px;
-	border-top: 1px solid #EEEEEE;
-	border-left: 1px solid #EEEEEE;
-	border-right: 1px solid #EEEEEE;
-	-webkit-border-radius: 7px 7px 0px 0px;
-	-moz-border-radius: 7px 7px 0px 0px;
-	-khtml-border-radius: 7px 7px 0px 0px;
-	border-radius: 7px 7px 0px 0px;
+
 }
 #header #cart.active .content {
 	display: block;
@@ -257,30 +245,31 @@ label {
 }
 #header #search {
 	position: absolute;
-	top: 108px;
+	top: 112px;
 	right: 0px;
-	width: 298px;
+	width: 278px;
 	z-index: 15;
+	margin-right: 15px;
 }
 #header .button-search {
 	position: absolute;
-	left: 0px;
-	background: url('../image/button-search.png') center center no-repeat;
-	width: 28px;
-	height: 24px;
-	border-right: 1px solid #CCCCCC;
+	top: 2px;
+	right: 2px;
+	background: url(../image/btn_search.png) no-repeat top left;
+	width: 66px;
+	height: 21px;
 	cursor: pointer;
 }
 #header #search input {
-	background: #FFF;
-	padding: 1px 1px 1px 33px;
-	width: 252px;
-	height: 21px;
-	border: 1px solid #CCCCCC;
+	background: url(../image/bg_search.png) no-repeat top left;
+	padding: 0 73px 0 10px;
+	width: 195px;
+	height: 25px;
+	line-height: 25px;
 	-webkit-border-radius:10px;
 	-moz-border-radius: 10px;
 	-khtml-border-radius:10px;
-	border-radius:20px;
+	border: none;
 }
 #welcome {
 	float: right;
@@ -306,9 +295,9 @@ label {
 }
 /* menu */
 #menu {
-	background: #b90917;
+	background: url(../image/bg_menu_top.jpg) no-repeat top left #b90917;
 	border-bottom: 1px solid #da1b2f;
-	height: 37px;
+	height: 45px;
 	margin-bottom: 15px;
 	padding: 0px 5px;
 }
@@ -320,20 +309,26 @@ label {
 #menu > ul > li {
 	position: relative;
 	float: left;
-	z-index: 20;	
+	z-index: 20;
+	margin-top: 8px;
 }
 #menu > ul > li:hover {
-	background: #000;
+	background: url(../image/bg_heading.png) repeat-x left -1px;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px #990000;
 }
 #menu > ul > li > a {
 	font-size: 13px;
+	font-weight: bold;
 	color: #FFF;
-	line-height: 14px;
+	height: 30px;
+	line-height: 30px;
 	text-decoration: none;
 	display: block;
-	padding: 12px 15px 11px 15px;
+	padding: 0 15px;
 	z-index: 6;
 	position: relative;
+
 }
 #menu > ul > li > div {
 	display: none;
@@ -582,16 +577,29 @@ a.button:hover span {
 	margin-bottom: 20px;
 }
 .box .box-heading {
-	border: 1px solid #a19e9e;
-	background: #ff951f url('../image/background.png') repeat-x;
-	background: #ff951f;
-	padding: 8px 10px 7px 10px;
+	border: 1px solid #bababa;
+	background: url(../image/bg_heading.png) repeat-x top left #ff951f;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	font-weight: bold;
 	line-height: 14px;
-	color: #fff;
+	color: #ffffff;
 	text-transform:uppercase;
+	height: 34px;
+	line-height: 34px;
+	box-shadow: 0 0 2px #ececec;
+	border-bottom: 1px solid #ff951f;
+}
+.feature {}
+.feature .box-heading {
+	background: url(../image/bg_heading.png) repeat-x 0px -38px;
+	padding-left: 10px;
+	color: #000000;
+	border-bottom: 2px solid #ff951f;
+}
+.box .box-heading .middle {
+	padding-left: 10px;
+	border-left: 1px solid #ffe225;
+	border-right: 1px solid #ffe225;
 }
 .box .box-content {
 	background: #FFFFFF;
@@ -1564,20 +1572,22 @@ a.button:hover span {
 .banner div img {
 	margin-bottom: 10px;
 }
-/*trungjc*/
+/*trungjc
 #column-left #banner0 img,#column-right #banner2 img ,#column-right #banner1 img,#column-right #banner0 img {
 	position: fixed;
 	top:50px;
 	
-}body #fancybox-wrap ,body #fancybox-overlay{
-    z-index: 9991101;}
+}
 #column-left #banner0 img {
 	left: 5%;
 }
-.image-additional img {width:74;height:74px;}
 #column-right #banner2 img,#column-right #banner1 img,#column-right #banner0 img {
 	right: 5%;
-}
+}*/
+body #fancybox-wrap ,body #fancybox-overlay{
+    z-index: 9991101;}
+.image-additional img {width:74;height:74px;}
+
 #content {position: relative;}
 #content #banner3,#content #banner2,#content #banner1 {
 	position: absolute;	
@@ -1597,7 +1607,10 @@ a.button:hover span {
     border: 1px solid #A19E9E;
     padding: 3px;
 }
-#column-left .bestseller .box-content {padding: 5px 4px;}
+#column-left .bestseller .box-content {
+	padding: 5px 4px;
+	background-color: #fdf0f0;
+}
 #column-left .bestseller  img {border: 1px solid #ff000c;padding: 3px 0;}
 #container #content .feature .box-product > div ,#container #content .special .box-product > div{width:157px!important;margin-right:  14px;margin-left:14px;}
 #container #content .feature .box-product > div{width:157px!important;margin-right:  13px;margin-left:16px;}
@@ -1616,4 +1629,4 @@ a.button:hover span {
 .homepage #content .feature{padding-top:185px;}
 .homepage #content .tababc .cart,.homepage #content .tababc .name{display:none;}
 .homepage #content .tababc .box-content {padding: 4px;}
-.homepage #content .tababc .box-heading {background:none;height}
+/*.homepage #content .tababc .box-heading {background:none;height}*/
