@@ -1,0 +1,16 @@
+/* news */
+.box-news {
+	border-bottom: 1px solid #DDDDDD;
+	margin-bottom: 10px;
+}
+.box-news h4 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.box-news p {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.box-news > div {
+	margin-bottom: 5px;
+}

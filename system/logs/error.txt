@@ -13,3 +13,21 @@
 2012-01-08 23:05:06 - PHP Notice:  Error: Could not load template D:\xampp\htdocs\180buy/admin/view/template/module/cr2htmlmodule.tpl! in D:\xampp\htdocs\180buy\system\engine\controller.php on line 71
 2012-01-09 1:07:39 - PHP Notice:  Undefined variable: pos in D:\xampp\htdocs\180buy\catalog\view\theme\default\template\common\home.tpl on line 2
 2012-01-09 17:51:26 - PHP Notice:  Error: Could not load language module/carousel! in C:\xampp\htdocs\180buy\system\library\language.php on line 26
+2012-01-10 23:21:53 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:21:53 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:23:05 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:23:05 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:23:28 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\information\news.php on line 86
+2012-01-10 23:23:28 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\information\news.php on line 86
+2012-01-10 23:23:51 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\information\news.php on line 86
+2012-01-10 23:23:51 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\information\news.php on line 86
+2012-01-10 23:24:52 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:24:52 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:25:44 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:25:44 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:26:33 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:26:33 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:26:54 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:26:54 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:27:11 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23
+2012-01-10 23:27:11 - PHP Warning:  substr() expects parameter 3 to be long, string given in D:\xampp\htdocs\180buy\catalog\controller\module\news.php on line 23

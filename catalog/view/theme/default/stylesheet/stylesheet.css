@@ -1616,7 +1616,8 @@ body #fancybox-wrap ,body #fancybox-overlay{
 #container #content .feature .box-product > div{width:157px!important;margin-right:  13px;margin-left:16px;}
 #container .banner div {text-align:left;}
 .feature {margin:0 0 10px 0;}
-.parner {width:200px;position:absolute;right:0; top: 57.2%;}
+.parner,.newblog {width:200px;position:absolute;right:0; top: 95.2%;}
+.newblog {height:400px;position:absolute;right:0; top: 57.2%;}
 .parner .box-content {overflow:hidden;padding: 8px;}
 .parner ul{list-style: none;float:left;margin:0;padding:0;}
 .parner li{float: left;width:50%;}
