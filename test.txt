@@ -1,2 +1,2 @@
 commit cua trung tu branch Trung
-trung sua o day commit cua giang tu branch Trung udadate tiep tuc 
+trung sua o day commit cua giang tu branch Trung [giang sua them]
