@@ -1,1 +1,2 @@
 commit cua trung tu branch Trung
+commit cua giang tu branch Trung
